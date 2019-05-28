@@ -16,10 +16,10 @@ namespace PlanetECS
         
         
         [BurstCompile]
-        struct PlanetJob : IJobProcessComponentData<Position, PlanetData>
+        struct PlanetJob : IJobProcessComponentData<Translation, PlanetData>
         {
             [ReadOnly] public float dt;
-            public void Execute(ref Position pos, ref PlanetData planetData)
+            public void Execute(ref Translation pos, ref PlanetData planetData)
             {
                 float3 p = pos.Value;
 

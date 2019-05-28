@@ -10,11 +10,11 @@ namespace PlanetECS
     {
        
         
-        ComponentGroup m_Spawners;
+        EntityQuery m_Spawners;
 
         protected override void OnCreateManager()
         {
-            m_Spawners = GetComponentGroup(typeof(SpawnPlanetData));
+            m_Spawners = GetEntityQuery(typeof(SpawnPlanetData));
         }
         static void GenerateRandomPlanet(float maxRadius, 
         ref NativeArray<float3> positions, ref NativeArray<float3> velocities, 
@@ -76,7 +76,7 @@ namespace PlanetECS
                     for (int i = 0; i < spawnData.count; i++)
                     {
                         var entity = EntityManager.Instantiate(prefab);
-                        var position = new Position()
+                        var position = new Translation()
                         {
                             Value =  positions[i]
                         };

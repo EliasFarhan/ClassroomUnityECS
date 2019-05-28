@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 2021936336575210546}
   - component: {fileID: 429095008700321605}
   - component: {fileID: 2880587082145616914}
-  - component: {fileID: 4174840553551267045}
+  - component: {fileID: 1921607103990537262}
   m_Layer: 0
-  m_Name: PlanetModel
+  m_Name: PlanetECS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,8 @@ MonoBehaviour:
       x: 0
       y: 0
       z: 5
---- !u!114 &4174840553551267045
+    mass: 0
+--- !u!114 &1921607103990537262
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

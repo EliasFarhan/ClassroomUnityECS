@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using Unity.Entities;
 using Unity.Mathematics;
 
@@ -13,4 +10,4 @@ public struct PlanetData : IComponentData
 }
 
 [UnityEngine.DisallowMultipleComponent]
-public class PlanetDataComponent : ComponentDataWrapper<PlanetData> { }
+public class PlanetDataComponent : ComponentDataProxy<PlanetData> { }
