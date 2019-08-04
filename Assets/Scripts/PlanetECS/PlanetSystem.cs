@@ -16,7 +16,7 @@ namespace PlanetECS
         
         
         [BurstCompile]
-        struct PlanetJob : IJobProcessComponentData<Translation, PlanetData>
+        struct PlanetJob : IJobForEach<Translation, PlanetData>
         {
             [ReadOnly] public float dt;
             public void Execute(ref Translation pos, ref PlanetData planetData)

@@ -12,7 +12,7 @@ namespace PlanetECS
         
         EntityQuery m_Spawners;
 
-        protected override void OnCreateManager()
+        protected override void OnCreate()
         {
             m_Spawners = GetEntityQuery(typeof(SpawnPlanetData));
         }

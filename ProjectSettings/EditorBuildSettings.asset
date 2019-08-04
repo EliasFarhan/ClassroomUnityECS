@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PlanetSystem.unity
     guid: 3871b2274ab28ea41b30ad9118097b74
+  - enabled: 1
+    path: Assets/Scenes/PlanetBehavior.unity
+    guid: 31bc710bf4aaf4b49bfaea683c812e7c
   m_configObjects: {}
